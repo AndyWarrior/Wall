@@ -3,8 +3,7 @@ private var pos : float;
  
  function Start () {
   speed = 1;
-  pos = Random.Range (0, 3.6);
-  transform.position.x = pos - 1.80;
+  pos = GeneralVars.posX + 1.8;
  }
  
  function Update () {

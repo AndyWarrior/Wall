@@ -3,7 +3,9 @@ function Update()
  {
    if (Input.GetMouseButtonDown(0))
    {
-      var go = Instantiate(Square, new Vector2(0,0), Quaternion.identity);
+   	  GeneralVars.posY = GeneralVars.posY + 1;
+   	  GeneralVars.posX = GeneralVars.posX * -1;
+      var go = Instantiate(Square, new Vector2(GeneralVars.posX,GeneralVars.posY), Quaternion.identity);
       go.gameObject.AddComponent(MoveWall);
    }
  }
